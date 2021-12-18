@@ -1,0 +1,593 @@
+html {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	color: #000;
+	background: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	li-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#top, header, #menu-img, #chef-img {
+	overflow: hidden;
+	clear: both;
+}
+
+
+#top  {
+	background: url(../img/main.jpg) top center no-repeat;
+	background-size: cover; 
+	min-height: 800px;
+}
+
+.center-box {
+	margin: 0 auto;
+	padding: 30px 50px 0px 50px;
+}
+
+header {
+	margin: 20px 0 50px 0;
+} 
+
+#logo {
+	width: 250px;
+	float: left;
+}
+
+nav,nav ul {
+	float: right;
+}
+
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: inline-block;
+	margin-left: 50px;
+	color: #000;
+	font-size: 24px;
+}
+
+nav li a:hover {
+	color: #fff;
+}
+
+#about {
+	background-color: #000;
+	min-height: 400px;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #fff;
+	font-size: 40px;
+	margin: 90px 0 0 50px;
+	line-height: 1.6;
+}
+
+#about:before, footer:before 
+	background: url(../img/up.png) bottom center repeat-x;
+	content: "";
+	width: 100%;
+	height: 100px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	
+
+
+#about:after, footer:after 
+	background: url(../img/down.png) top center repeat-x;
+	content: "";
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+
+
+#menu {
+	background-color: #fff;
+}
+
+#menu-img, #chef-img {
+	height: 300px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #000;
+	font-size: 25px;
+	margin: 80px 0 80px 50px;
+	line-height: 1.6;
+}
+
+.button {
+	background: #000;
+	display: inline-block;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0 0 40px 600px;;
+}
+
+#reservation {
+	margin: 40px 0 0 20px;
+	min-height: 300px;
+}
+
+#reservation-img {
+	float: left;
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#reservation h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #000;
+	font-size: 25px;
+	margin: 0 25px 20px 0;
+	line-height: 1.6;
+}
+
+#reservation p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #000;
+	margin: 5px 25px 25px 0;
+}
+
+#reservation .button, #form .button {
+	background: #000;
+	display: inline-block;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 20px 0 40px 0;
+	float: left;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #000;
+	font-size: 25px;
+	margin: 90px 0 90px 0;
+	line-height: 1.6;
+}
+
+.one-half {
+	width: 50%;
+	float: left;
+}
+
+.one-third {
+	width: 33.33%;
+	float: left;
+}
+
+.two-third {
+	width: 66.66%;
+}
+
+.one-half, .one-third {
+	min-height: 1px;
+	padding: 0 20px;
+}
+
+.two-third {
+	float: right;
+}
+
+#chef {
+	line-height: 1.6;
+	min-height: 400px;
+}
+
+#gallery img {
+	float: left;
+	margin-right: 30px;
+	margin-left: 30px;
+	width: 30%;
+	box-sizing: border-box;
+}
+
+#gallery img:last-of-type {
+	margin-right: 0px;
+}
+
+.img-full {
+   display: block;
+  }
+  
+ .img-mobile {
+	 display: none;
+ }
+
+#form {
+	min-height: 800px;
+}
+
+form {
+	margin: 90px 0 90px 50px;
+}
+
+#form form input[type="text"], #form form input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	border: solid 1px black;
+	margin: 0 0 25px 0;
+	font-family: inherit;
+	font-size: 18px;
+	color: #fff;
+}
+
+#form form input[type="checkbox"] {
+	width: 24px;
+	height: 24px;
+	float: left;
+	border: solid 1px black;
+	margin: 0 25px 0 0;
+}
+
+
+#form form input[type="submit"] {
+	display: inline-block;
+	background: #000;
+	padding: 10px 15px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+	float: left;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #000;
+	margin: 5px 0 25px 0;
+	line-height: 1.6;
+}
+
+footer {
+	padding: 60px 0 0 120px;
+	background-color: #000;
+	height: 300px;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #fff;
+	font-size: 26px;
+	margin: 0 0 30px 0;
+	
+}
+
+footer p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.6;
+}
+
+#social {
+	height: 100px;
+}
+
+#social ul {
+	overflow: hidden;	
+	clear: both;
+	margin: 50px 0 0 450px;
+}
+
+#social ul li {
+	display: inline;		
+}
+
+#social ul li a {
+	display: inline-block;	
+	border: solid 1px #fff;
+	width: 80px;
+	height: 80px;
+	margin: 0 20px 0 0;
+	background-size: 60px auto;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#facebook {background-image: url(../img/fb.png);}
+#twitter {background-image: url(../img/tw.png);}
+#insta {background-image: url(../img/insta.png);}
+#tripadvisor {background-image: url(../img/ta.png);}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+	#logo {
+		width: 25%;
+	}
+	nav li a {
+		margin-left: 15px;
+		color: #000;
+		font-size: 18px;
+	}
+	#gallery img {
+		float: left;
+		margin-right: 10px;
+		width: 27%;
+		box-sizing: border-box;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	#logo {
+		width: 30%;
+	}
+	#top  {
+		min-height: 600px;
+		overflow: hidden;
+	}
+	.img-full {
+		display: none;
+	}
+	.img-mobile {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	#about {
+		min-height: 300px;
+	}
+	#menu-img, #chef-img {
+		height: 50%;
+		width: 50%;
+		display: inline-block;
+	}
+	#reservation {
+		margin: 0;
+		min-height: 420px;
+	}
+	#reservation-img {
+		float: right;
+		width: 418.5px;
+		height: 418.5px;
+		box-sizing: border-box;
+		overflow: hidden;
+		
+	}
+	h1 {
+		font-size: 30px;
+		margin: 40px 0 0 20px;
+	}
+	h2 {
+		font-size: 20px;
+		float: right;
+		height: 50%;
+		width: 50%;
+		display: inline-block;
+		margin: 80px -40px 60px 20px;
+		line-height: 1.6;
+	}
+	#reservation h3 {
+		font-size: 20px;
+		float: left;
+		width: 100%;
+		display: inline-block;
+		margin: 80px -40px 60px 0;
+		line-height: 1.6;
+	}
+	#chef .button{
+		margin: -80px 250px 0 20px;
+		
+	}
+	.two-third {
+		width: 350px;
+		margin: 0 20px 0 20px;
+	}
+	#form {
+		min-height: 1000px;
+	}
+	#form h2 {
+		float: left;
+		width: 100%;
+	}
+	.button {
+		float: right;
+		font-size: 20px;
+		padding: 10px;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin: 40px 290px 0 0;
+		clear: both;
+	}
+	footer {
+		padding: 60px 0 40px 40px;
+		min-height: 150px;
+	}
+	#social ul {
+		overflow: hidden;	
+		clear: both;
+		margin: 40px 0 0 250px;
+	}
+	#social ul li a {
+		display: inline-block;	
+		border: solid 1px #fff;
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		background-size: 40px auto;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	#logo {
+		width: 40%;
+	}
+	.center-box {
+		margin: 0 auto;
+		padding: 20px 30px 0px 20px;
+	}
+	#top  {
+		min-height: 400px;
+		overflow: hidden;
+	}
+	#about {
+		min-height: 200px;
+	}
+	#reservation-img {
+		float: right;
+		width: 270px;
+		height: 270px;
+		box-sizing: border-box;
+		overflow: hidden;	
+	}
+	h1 {
+		font-weight: normal;
+		font-size: 20px;
+		margin: 40px 0 0 20px;
+	}
+	h2 {
+		font-size: 15px;
+		float: right;
+		height: 50%;
+		width: 50%;
+		display: inline-block;
+		margin: 60px -40px 0px 0px;
+		line-height: 1.6;
+	}
+	#reservation {
+		min-height: 270px;
+	}
+	#reservation h3 {
+		font-size: 15px;
+		float: left;
+		width: 100%;
+		display: inline-block;
+		margin: 60px -40px 20px 0;
+		line-height: 1.6;
+	}
+	p {
+		font-size: 10px;
+		margin: 5px 0 20px 0;
+		line-height: 1.6;
+	}
+	.button {
+		float: right;
+		font-size: 15px;
+		padding: 10px;
+		margin: 20px 160px 0 0;
+		
+	}
+	#reservation .button{
+		float: left;
+		font-size: 15px;
+		padding: 10px;
+		margin: 20px 0 0 0;
+	}
+	.two-third {
+		width: 250px;
+		margin: 0 0px 0 20px;
+		
+		min-height: 270px;
+	}
+	#chef {
+		min-height: 270px;
+	}
+	#chef .button {
+		float: right;
+		font-size: 15px;
+		padding: 10px;
+		margin: -60px 140px 0 0;
+	}
+	#form {
+		min-height: 660px;
+	}
+	#form h2{
+		margin: 30px 0 0 0;
+	}
+	form {
+		margin: 30px 0 0 0;
+	}
+	#form form input[type="text"], #form form input[type="email"] {
+		padding: 10px;
+		margin: 0 0 20px 0;
+		font-family: inherit;
+		font-size: 15px;
+	}
+	#form form input[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+		margin: 0 10px 10px 0;
+	}
+	#form .button {
+		float: left;
+		font-size: 15px;
+		padding: 10px;
+		margin: 15px 0 0 0;
+	}
+	footer {
+		padding: 40px 0 0 10px;
+		min-height: 100px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	footer p {
+		font-size: 12px;
+	}
+	#social ul {
+		overflow: hidden;	
+		clear: both;
+		margin: 40px 0 0 150px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	#top  {
+		min-height: 200px;
+		overflow: hidden;
+	}
+	
+}
+
+
+
+
