@@ -76,6 +76,7 @@ nav li a:hover {
 #about {
 	background-color: #000;
 	min-height: 400px;
+	position: relative;
 }
 
 h1 {
@@ -87,26 +88,26 @@ h1 {
 	line-height: 1.6;
 }
 
-#about:before, footer:before 
-	background: url(../img/up.png) bottom center repeat-x;
+#about:before {
+	background: url(../img/up.png) top center repeat-x;
 	content: "";
 	width: 100%;
 	height: 100px;
-	top: 0;
+	top: -100px;
 	left: 0;
 	position: absolute;
-	
+}
 
 
-#about:after, footer:after 
-	background: url(../img/down.png) top center repeat-x;
+#about:after {
+	background: url(../img/down.png) bottom center repeat-x;
 	content: "";
 	width: 100%;
 	height: 100px;
-	bottom: 0;
+	bottom: -100px;
 	left: 0;
 	position: absolute;
-
+}
 
 #menu {
 	background-color: #fff;
@@ -123,6 +124,10 @@ h2 {
 	font-size: 25px;
 	margin: 80px 0 80px 50px;
 	line-height: 1.6;
+}
+
+#menu h2 {
+	margin: 150px 0 80px 50px;
 }
 
 .button {
@@ -241,7 +246,11 @@ h3 {
 }
 
 form {
-	margin: 90px 0 90px 50px;
+	margin: 50px 0 90px 50px;
+}
+
+#form h2 {
+	margin: 50px 0 90px 50px;
 }
 
 #form form input[type="text"], #form form input[type="email"] {
@@ -286,6 +295,7 @@ footer {
 	padding: 60px 0 0 120px;
 	background-color: #000;
 	height: 300px;
+	position: relative;
 }
 
 h4 {
@@ -304,6 +314,27 @@ footer p {
 	line-height: 1.6;
 }
 
+footer:before {
+	background: url(../img/up.png) top center repeat-x;
+	content: "";
+	width: 100%;
+	height: 100px;
+	top: -100px;
+	left: 0;
+	position: absolute;
+}
+
+
+footer:after {
+	background: url(../img/down.png) bottom center repeat-x;
+	content: "";
+	width: 100%;
+	height: 100px;
+	bottom: -100px;
+	left: 0;
+	position: absolute;
+}
+
 #social {
 	height: 100px;
 }
@@ -311,7 +342,7 @@ footer p {
 #social ul {
 	overflow: hidden;	
 	clear: both;
-	margin: 50px 0 0 450px;
+	margin: 120px 0 0 450px;
 }
 
 #social ul li {
@@ -374,6 +405,12 @@ footer p {
 	#about {
 		min-height: 300px;
 	}
+	#about:before {
+		display: none;
+	}
+	#about:after {
+		display: none;
+	}
 	#menu-img, #chef-img {
 		height: 50%;
 		width: 50%;
@@ -403,6 +440,9 @@ footer p {
 		display: inline-block;
 		margin: 80px -40px 60px 20px;
 		line-height: 1.6;
+	}
+	#menu h2 {
+		margin: 80px -40px 60px 20px;
 	}
 	#reservation h3 {
 		font-size: 20px;
@@ -440,6 +480,12 @@ footer p {
 		padding: 60px 0 40px 40px;
 		min-height: 150px;
 	}
+	footer:before {
+		display: none;
+	}
+	footer:after {
+		display: none;
+	}
 	#social ul {
 		overflow: hidden;	
 		clear: both;
@@ -468,6 +514,9 @@ footer p {
 	#top  {
 		min-height: 400px;
 		overflow: hidden;
+	}
+	#menu h2 {
+		margin: 40px -40px 40px 20px;
 	}
 	#about {
 		min-height: 200px;
@@ -501,7 +550,7 @@ footer p {
 		float: left;
 		width: 100%;
 		display: inline-block;
-		margin: 60px -40px 20px 0;
+		margin: 40px -40px 20px 0;
 		line-height: 1.6;
 	}
 	p {
@@ -523,9 +572,8 @@ footer p {
 		margin: 20px 0 0 0;
 	}
 	.two-third {
-		width: 250px;
+		width: 230px;
 		margin: 0 0px 0 20px;
-		
 		min-height: 270px;
 	}
 	#chef {
@@ -580,12 +628,20 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
 	#top  {
 		min-height: 200px;
 		overflow: hidden;
 	}
-	
+	h1 {
+		margin: 20px 0 0 10px;
+	}
+	#menu h2 {
+		margin: 20px -40px 20px 20px;
+	}
+	#social ul {
+		margin: 40px 0 0 120px;
+	}
 }
 
 
